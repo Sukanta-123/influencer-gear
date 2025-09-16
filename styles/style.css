@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-heading {
+    width: 50%;
+}
+.nav-heading > p {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+    margin-top: 25px;
+}
+ul{
+    list-style: none;
+    margin-top: 30px;
+}
+ul, li {
+    display: inline-block;
+    padding-left: 35px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+i {
+    padding-left: 20px;
+    font-size: 25px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen  and (max-width : 640px){
+    .nav-heading {
+        width: 30%;
+    }
+    .nav-heading > p {
+        font-size: 1rem;
+    }
+    ul, li {
+        padding-left: 10px;
+        font-size: 0.95rem;
+    }
+    ul {
+        margin-top: 25px;
+    }
+    i {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .nav-container {
+        justify-content: space-around;
+    }
+}
+.information-heading {
+    width: 580px;
+    height: 270px;
+}
+.information-heading > h2 {
+    font-size: 3rem;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+}
+.information-heading > p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3A3A3A;
+    width: 540px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #E02C6D;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+button, p, i {
+    display: inline-block;
+    margin: 0 auto;
+}
+button, i {
+    font-size: 15px;
+}
+button, p {
+    font-size: 1rem;
+}
+.banner-picture {
+    background-image: url(../photos/Circle\ design.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.information-heading {
+    grid-area: heading;
+    margin: 0 auto;
+}
+.banner-picture {
+    grid-area: picture;
+    margin: 0 auto;
+}
+.container-one {
+    display: grid;
+    grid-template-areas: 
+    "heading  picture"
+    ;
+    margin-top: 100px;
+}
+@media screen and (max-width : 640px) {
+    .container-one {
+        grid-template-areas: 
+        "picture"
+        "heading"
+        ;
+        margin-top: 50px;
+    }
+    .banner-picture img { 
+        width: 400px;
+        height: 400px;
+    }
+    .information-heading {
+        width: 500px;
+        height: 270px;
+    }
+    .information-heading > h2 {
+       text-align: center;
+       font-size: 2.5rem;
+    }
+    .information-heading > p {
+        text-align: center;
+        width: 500px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
