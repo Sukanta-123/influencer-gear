@@ -233,3 +233,11 @@ button, p {
     align-items: center;
     margin-top: 30px;
 }
+@media screen  and (max-width : 640px) {
+    .box-container {
+       grid-template-columns: repeat(1, 350px);
+    }
+    .box {
+        flex-grow: 1;
+    }
+}
