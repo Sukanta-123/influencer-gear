@@ -4,6 +4,13 @@
   font-weight: 400;
   font-style: normal;
 }
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #787885;
+}
 * {
     margin: 0;
     padding: 0;
@@ -187,15 +194,42 @@ button, p {
     width: 330px;
     height: 480px;
     background-color: whitesmoke;
+    border-radius: 10px;
 }
 .box > h2 {
     font-size: 1.6rem;
     font-weight: 500;
     color: #3A3A3A;
     margin-top: 10px;
+    margin-left: 15px;
 }
-.box img {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.box > h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.box > img {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.text-box {
+    margin-left: 15px;
+
+}
+.box > .icon-box {
+   margin-left: 12px;
+}
+.icon-box > i {
+    padding-left: 4px;
+    font-size: 10px;
+    color: orange;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
