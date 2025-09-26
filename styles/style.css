@@ -97,14 +97,14 @@ button {
     font-weight: bold;
     font-size: 1rem;
 }
-.information-heading > button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 button, p, i {
     display: inline-block;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 button, i {
     font-size: 15px;
