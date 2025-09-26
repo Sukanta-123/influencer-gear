@@ -104,7 +104,6 @@ button {
 }
 button, p, i {
     display: inline-block;
-    /* margin: 0 auto; */
 }
 button, i {
     font-size: 15px;
@@ -122,7 +121,6 @@ button, p {
         margin-bottom: 30px;
     }
     .information-heading > h2 {
-       /* text-align: center; */
        font-size: 2.5rem;
     }
     .information-heading > p {
@@ -157,7 +155,6 @@ button, p {
         max-width: 500px;
         height: 100px;
         flex-wrap: wrap;
-        justify-content: space-evenly;
     }
 }
 .box-heading {
@@ -233,6 +230,9 @@ button, p {
     .box-heading {
         margin-top: 150px;
     }
+    .see-more {
+        margin-left: 10px;
+    }
 }
 .nav-text > h3 {
     font-size: 1.5rem;
@@ -273,4 +273,5 @@ button, p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
